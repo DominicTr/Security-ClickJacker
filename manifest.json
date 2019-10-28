@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome anti Virus",
+    "version": "0.1",
+    "page_action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.facebook.com/*"
+          ],
+          "js": ["content.js"]          
+        }
+      ]
+      
+  }
